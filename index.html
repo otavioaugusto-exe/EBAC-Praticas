@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prática EBAC JS</title>
+    <title>JQuery</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 </head>
-<body> 
-    <section id="formSection">
-        <div class="container">
-                <h1>Prática EBAC JS</h1>
-                <form id="form-numero">
-                    <input type="number" name="numero-a" id="numero-a" placeholder="Número A" required>
-                    <input type="number" name="numero-b" id="numero-b" placeholder="Número B" required>
-                    <button type="submit" id="enviar-numero">Enviar</button>
-                </form>
-                    <p id="mensagem-form" class="mensagem-form">Formulário mensagem</p>
-        </div>
-    </section>
+<body>
+    <div class="container">
+        <section id="menu-tarefa">
+            <h1>lista de tarefas</h1>
+            <form id="form-tarefa">
+                <input type="text" name="tarefa" id="input-tarefa" placeholder="adicione sua tarefa" required>
+                <button type="submit">enviar</button>
+            </form>
+            <ul id="lista-tarefa">
+            </ul>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
