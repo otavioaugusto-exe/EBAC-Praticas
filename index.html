@@ -1,27 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JQuery</title>
+    <title>Mask jquery</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <section id="menu-tarefa">
-            <h1>lista de tarefas</h1>
-            <form id="form-tarefa">
-                <input type="text" name="tarefa" id="input-tarefa" placeholder="adicione sua tarefa" required>
+        <section id="form-section">
+            <form id="form-cadastro">
+                <div>
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" autocomplete="name">
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email" autocomplete="email">
+                </div>
+                <div>
+                    <label for="telefone">Celular</label>
+                    <input type="tel" name="telefone" id="telefone" autocomplete="tel">
+                </div>
+                <div>
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" inputmode="numeric">
+                </div>
+                <div>
+                    <label for="endereço">Endereço</label>
+                    <input type="text" name="endereço" id="endereço" autocomplete="street-address">
+                </div>
+                <div>
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep" inputmode="numeric" autocomplete="postal-code">
+                </div>
                 <button type="submit">enviar</button>
             </form>
-            <ul id="lista-tarefa">
-            </ul>
         </section>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="main.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

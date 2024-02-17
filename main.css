@@ -1,97 +1,65 @@
 * {
-    font-family: "Fredoka", sans-serif;
-    box-sizing: border-box;
-    border: 0;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
 }
 
 .container {
+    max-width: 1024px;
     margin: 0 auto;
-    width: 720px;
 }
 
-.container #menu-tarefa {
-    margin: 30% auto;
-
-}
-#menu-tarefa {
-    width: 300px;
-    background-color: #fdf5ff;
-    padding: 32px;
-    border-radius: 8px;
-    border: 1px #d321ff solid;
-    box-shadow: 0 0 0.5em #ec9fff;
-
+#form-section {
+    background-color: #fdf4ff;
+    max-width: 350px;
+    border-radius: 10px;
+    margin: 15% auto;
+    box-shadow: 0 0 0.7em #e1e1e1cf;
+    border: 1px #e96cff solid;
 }
 
-h1 {
-    font-weight: 500;
+form {
+    width: 80%;
+    padding: 20px;
+    margin: 15% auto;
+}
+
+form label {
+    color: #2a2a2a;
+}
+
+form div {
+    display: block;
+    width: 100%;
     margin-bottom: 16px;
 }
 
-#form-tarefa {
-    display: flex;
-}
-
-input, button {
-    padding: 8px;
-    font-size: 14px;
+form input {
+    border: 1px #8e8e8e solid;
     border-radius: 8px;
-}
-
-input {
-    border: 1px #d321ff solid;
-    outline: none;
+    padding: 6px;
+    margin-top: 8px;
+    width: 100%;
 
 }
 
-input:focus {
-    border: 1px #8f17ad solid;
-    box-shadow: inset 0 0 0.3em #f4c7ff;
-
-}
-
-button {
-    background-color: #de58ff;
-    border: #8f17ad;
-    color: #ffffff;
-    margin-left: 8px;
-    width: 80px;
-    text-align: center;
-    box-shadow: 0 0 0.5em #ec9fff;
-
-}
-
-button:hover {
-    background-color: #d321ff;
-}
-
-button:active {
-    box-shadow: inset 0 0 1em #8f17ad;
-}
-
-ul {
-    height: 150px;
-    width: 234px;
-    list-style-type: none;
+form button {
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #e96cff;
+    box-shadow: 0 0 0.7em #ed87ff;
     margin-top: 16px;
-    background-color: #ffffff;
-    padding: 8px;
-    border: 1px #d321ff solid;
-    border-radius: 8px;
-    overflow: scroll;
-    font-size: 14px;
+    padding: 10px 6px;
+    width: 100%;
+    cursor: pointer;
 }
 
-ul li {
-    padding: 5px 0;
-    border-bottom: 1px #f0b5ff solid;
-}
-
-.tarefa-feita {
-    text-decoration: line-through;
-    text-decoration-color: #d321ff;
-    color: #666666;
+.error {
+    font-size: 10px;
+    color: #9b0052;
     font-style: italic;
 }
